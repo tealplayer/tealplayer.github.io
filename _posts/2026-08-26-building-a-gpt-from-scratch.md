@@ -12,7 +12,9 @@ date: 2026-08-26
     }
   };
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async>
+</script>
 
 The modern AI boom all sprung from an architecture originally meant for translating text from one language into another, called the transformer. Introduced by Vaswani et al.[1] in 2017, it's the basis for AI models such as Claude and ChatGPT. In this, I reimplement a decoder-only version from scratch, trained it on Shakespeare, investigated model behavior based on the one-layer interpretability in [2], and went looking for induction heads inspired by the two-head circuit that [2] identifies as the mechanism behind in-context learning. Although I didn't find any induction heads, there are some interesting implications of this. This post is about what I built, what I found instead, and why I think character-level tokenization is the reason the circuit never formed
 
